@@ -13,16 +13,6 @@ SECTIONS
         *(.text.*)
         *(.rodata)
         *(.rodata.*)
-    } > FLASH
-
-    .eh_frame :
-    {
-        *(.eh_frame)
-    } > FLASH
-
-    .ARM.exidx :
-    {
-        *(.ARM.exidx)
         _mydata_lma_start = .; /* LMA is equivalent to VMA in this section */
     } > FLASH
 
